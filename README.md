@@ -15,3 +15,24 @@ I want to see the time at which it was made
 As a Maker
 So that I can post messages on Chitter as me
 I want to sign up for Chitter
+
+### To run the Chitter app:
+
+```
+rackup -p 3000
+```
+
+### To run tests:
+
+```
+rspec
+```
+
+### To run linting:
+
+```
+rubocop
+```
+
+
+
