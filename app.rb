@@ -1,5 +1,7 @@
 require 'sinatra/base'
 require 'sinatra/reloader'
+require_relative './lib/chitterweb'
+
 
 class Chitter < Sinatra::Base
   configure :development do
@@ -7,7 +9,12 @@ class Chitter < Sinatra::Base
   end
 
   get '/' do
-    'Chitter'
+    'Peeps'
+  end
+
+  get '/peeps' do
+    @chitterweb = ChitterWeb.all
+    erb :'peeps/index'
   end
 
   run! if app_file == $0
