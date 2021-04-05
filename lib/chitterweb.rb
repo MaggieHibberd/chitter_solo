@@ -1,10 +1,10 @@
+require 'pg'
+
 class ChitterWeb
 
   def self.all
-    [ 
-      'My first peep',
-      'Get to the chopper',
-      'We have landed',
-    ]
+ connection = PG.connect(dbname: 'chitter_management' )
+ result = connection.exec("SELECT * FROM peeps;")
+ result.map { |peep| peep['content'] }
   end
 end 
