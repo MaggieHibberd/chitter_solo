@@ -16,6 +16,13 @@ As a Maker
 So that I can post messages on Chitter as me
 I want to sign up for Chitter
 
+### To create database:
+
+```
+Got to db/CREATE_DATABASE.SQL
+```
+
+
 ### To run the Chitter app:
 
 ```
