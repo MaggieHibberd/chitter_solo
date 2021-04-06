@@ -1,6 +1,18 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/maggiehibberd/chitter_solo/spec/features/creating_peep_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/maggiehibberd/chitter_solo/spec/features/viewing_peeps_spec.rb": {
         "lines": [
           1,
@@ -53,10 +65,18 @@
           null,
           null,
           null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
           null
         ]
       }
     },
-    "timestamp": 1617733447
+    "timestamp": 1617737853
   }
 }

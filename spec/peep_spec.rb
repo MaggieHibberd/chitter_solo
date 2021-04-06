@@ -17,4 +17,12 @@ describe ChitterWeb do
 
     end
   end
+
+  describe '.create' do 
+    it 'creates a new peep' do 
+      ChitterWeb.create(peep: 'Hope everyone is having a smasher of a day!')
+
+      expect(ChitterWeb.all).to include 'Hope everyone is having a smasher of a day!'
+    end
+  end
 end
