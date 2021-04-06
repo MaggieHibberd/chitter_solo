@@ -4,10 +4,10 @@
       "/Users/maggiehibberd/chitter_solo/spec/features/viewing_peeps_spec.rb": {
         "lines": [
           1,
-          1,
-          1,
-          1,
-          1,
+          null,
+          null,
+          null,
+          null,
           null,
           null,
           null,
@@ -15,9 +15,17 @@
           1,
           1,
           1,
+          null,
           1,
+          null,
+          null,
+          null,
           1,
+          null,
           1,
+          null,
+          null,
+          null,
           null,
           null,
           null,
@@ -37,12 +45,18 @@
           1,
           1,
           null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
           null,
           null,
           null
         ]
       }
     },
-    "timestamp": 1617654453
+    "timestamp": 1617733447
   }
 }
