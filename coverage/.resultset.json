@@ -13,10 +13,27 @@
           null
         ]
       },
+      "/Users/maggiehibberd/chitter_solo/spec/features/viewing_peeps_chrono_spec.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/maggiehibberd/chitter_solo/spec/features/viewing_peeps_spec.rb": {
         "lines": [
           1,
-          null,
           null,
           1,
           1,
@@ -47,10 +64,6 @@
       "/Users/maggiehibberd/chitter_solo/spec/peep_spec.rb": {
         "lines": [
           1,
-          null,
-          1,
-          1,
-          1,
           1,
           null,
           1,
@@ -58,6 +71,10 @@
           1,
           null,
           1,
+          1,
+          1,
+          null,
+          1,
           null,
           1,
           1,
@@ -65,18 +82,32 @@
           null,
           null,
           null,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
           1,
           1,
-          1,
           null,
-          1,
           null,
           null,
           null
         ]
+      },
+      "/Users/maggiehibberd/chitter_solo/spec/database_helpers.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1617806159
+    "timestamp": 1617905269
   }
 }

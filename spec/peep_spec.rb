@@ -1,28 +1,31 @@
 require 'chitterweb'
+require 'database_helpers'
 
 describe ChitterWeb do
   describe '.all' do
-    it 'returns all bookmarks' do
-      connection = PG.connect(dbname: 'chitter_management_test')
+    it 'returns all peeps' do
 
-      connection.exec("INSERT INTO peeps (content) VALUES ('My first peep');")
-      connection.exec("INSERT INTO peeps (content) VALUES ('Get to the chopper');")
-      connection.exec("INSERT INTO peeps (content) VALUES ('We have landed');")
+      ChitterWeb.create(peep: 'My first peep')
+      ChitterWeb.create(peep:'Get to the chopper') 
+      ChitterWeb.create(peep: 'We have landed') 
 
       peeps = ChitterWeb.all
 
-      expect(peeps).to include('My first peep')
-      expect(peeps).to include('Get to the chopper')
-      expect(peeps).to include('We have landed')
-
+      expect(peeps.first).to be_a ChitterWeb
+      expect(peeps.first.id).to eq peeps.first.id
+      expect(peeps.first.peep).to eq 'My first peep'
     end
   end
 
-  describe '.create' do 
+  describe '.create' do
     it 'creates a new peep' do 
-      ChitterWeb.create(peep: 'Hope everyone is having a smasher of a day!')
-
-      expect(ChitterWeb.all).to include 'Hope everyone is having a smasher of a day!'
+      peeps = ChitterWeb.create(peep: 'My first peep')
+      persisted_data = persisted_data(id: peeps.id)
+      expect(peeps).to be_a ChitterWeb
+      #Persisted database requiring workthrough
+      expect(peeps.id).to eq (peeps.id)
+      expect(peeps.peep).to eq 'My first peep'
     end
   end
 end
+

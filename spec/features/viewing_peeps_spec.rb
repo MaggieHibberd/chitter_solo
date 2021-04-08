@@ -1,6 +1,5 @@
 require 'pg'
 
-
 feature 'visiting the homepage' do
   scenario 'the page title is visible' do
     visit('/')
