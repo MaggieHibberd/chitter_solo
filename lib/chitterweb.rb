@@ -11,19 +11,19 @@ class ChitterWeb
   end
 
   def self.all
-    if ENV['ENVIRONMENT'] == 'TEST'
+    if ENV['ENVIRONMENT'] == 'test'
       connection = PG.connect(dbname: 'chitter_management_test' )
     else
       connection = PG.connect(dbname: 'chitter_management' )
     end
     result = connection.exec('SELECT * FROM peeps;')
     result.map  do |peep|
-    ChitterWeb.new(id: peep['id'], peep: peep['content'], timestamp: peep['timestamp'])
+      ChitterWeb.new(id: peep['id'], peep: peep['content'], timestamp: peep['timestamp'])
     end
   end
 
   def self.create(peep:)
-    if ENV['ENVIRONMENT'] == 'TEST'
+    if ENV['ENVIRONMENT'] == 'test'
       connection = PG.connect(dbname: 'chitter_management_test')
     else
       connection = PG.connect(dbname: 'chitter_management')
