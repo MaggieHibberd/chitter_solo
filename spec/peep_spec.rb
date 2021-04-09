@@ -20,7 +20,7 @@ describe ChitterWeb do
   describe '.create' do
     it 'creates a new peep' do 
       peeps = ChitterWeb.create(peep: 'My first peep')
-      persisted_data = persisted_data(id: peeps.id)
+      persisted_data = persisted_data(id: peeps.id, table: 'peeps')
       expect(peeps).to be_a ChitterWeb
       #Persisted database requiring workthrough
       expect(peeps.id).to eq (peeps.id)

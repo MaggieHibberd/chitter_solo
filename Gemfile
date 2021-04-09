@@ -11,6 +11,6 @@ gem 'pg'
 gem 'simplecov'
 gem 'simplecov-console'
 gem 'rspec-sinatra'
-gem 'rspec', group: :test
-gem 'capybara', group: :test
+gem 'capybara'
+gem 'bcrypt'
 

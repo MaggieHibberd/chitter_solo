@@ -3,8 +3,12 @@
 <head>
 <h1>PEEPS!</h1>
 <ul>
+<% if @user %>
+  <h1>Welcome, <%= @user.username %></h1>
+<% end %>
+<%time = Time.new %> 
 <% @chitterweb.each do |peep| %> 
-    <li><%= peep.peep %></h2> <h6>Posted on: <%= Date.strptime(peep.timestamp) %></h6></li>
+    <li><%= peep.peep %></h2> <h6>Posted on: <%= time.strftime(peep.timestamp) %></h6></li>
   <% end %>
 </ul>
 </head> 
